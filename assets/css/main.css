@@ -1,6 +1,10 @@
 
 /*GALLERY IMG GRID PORTFOLIO*/
 
+.grid-container img {
+  padding: 10px;
+}
+
 .grid-container {
   max-width: 1280px;
   margin: 0 auto;
