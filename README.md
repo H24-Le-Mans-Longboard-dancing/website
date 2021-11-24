@@ -5,7 +5,7 @@ lien grid image : https://codepen.io/kreigd/pen/QmMgzP <br>
 lien contact form :https://bbbootstrap.com/snippets/contact-form-social-icons-and-input-details-55177097
 <br>
 <br>
-Color :<br>
-Vert : #7fd721
-Gris foncé : #1e1e1e
-Gris clair : #e6e6e6
+Color :
+<br>Vert : #7fd721
+<br>Gris foncé : #1e1e1e
+<br>Gris clair : #e6e6e6
