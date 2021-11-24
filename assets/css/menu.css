@@ -168,3 +168,6 @@ nav ul li a span .rotate {
     z-index: -1;
     text-align: center
 }
+.sidebar {
+    z-index: 900;
+}
