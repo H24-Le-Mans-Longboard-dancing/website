@@ -1,18 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    user-select: none;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif
-}
 
 body {
     background-color: #eee
 }
 
-.btn {
+.btn-menu {
     position: absolute;
     top: 10px;
     left: 45px;
@@ -25,17 +18,17 @@ body {
     transition: left 0.4s ease
 }
 
-.btn.click {
+.btn-menu.click {
     left: 260px
 }
 
-.btn span {
+.btn-menu span {
     color: white;
     font-size: 15px;
-    line-height: 25px
+    line-height: 35px
 }
 
-.btn.click span:before {
+.btn-menu.click span:before {
     content: '\f00d'
 }
 
@@ -168,6 +161,7 @@ nav ul li a span .rotate {
     z-index: -1;
     text-align: center
 }
+
 .sidebar {
     z-index: 900;
 }
