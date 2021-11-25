@@ -17,18 +17,127 @@
     <link rel="shortcut icon" href="favicon.ico">
   </head>
   <body>
-<div oncontextmenu='return false' class='snippet-body'>
-<div class="btn"> <span class="fas fa-bars"></span> </div>
-<nav class="sidebar">
-    <div class="text"> H24 le mans <br> Longboard dancing </div>
-    <ul class="main_side">
-        <li class="active"><a href="#">Accueil</a></li>
-        <li><a href="actus.html">Actus</a></li>
-        <li><a href="portfolio.html">Photo</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
- <script type="text/javascript" src="assets/js/menu.js"></script>
- 
+  <div oncontextmenu='return false' class='snippet-body'>
+  <div class="btn-menu"> <span class="fas fa-bars"></span> </div>
+  <nav class="sidebar">
+      <div class="text" style="background-image: url(src/imgs/logo-blanc.png);
+    width: 100px;
+    height: 100px;
+    background-size: 88px;
+    background-repeat: no-repeat;
+    margin: 20px 80px;"></div>
+      <ul class="main_side">
+          <li class="active"><a href="#">Accueil</a></li>
+          <li><a href="actus.html">Actus</a></li>
+          <li><a href="portfolio.html">Photo</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+<div class="container-fluid contact-form">
+    <div class="card">
+        <div class="form">
+            <div class="left-side">
+                <div class="top">
+                    <h4>Nos info</h4>
+                    <p>Contactez-nous via le formulaire ou en utilisant un des moyens ci dessous, nous essayeron d'y repondre au plus vite</p>
+                </div>
+                <div class="medium"> 
+                    <i class="fa fa-phone"></i>
+                    <p>06 60 76 21 25</p> 
+                    <i class="fa fa-envelope-o"></i>
+                    <p>h24.dancing@gmail.com</p>
+                </div>
+                <div class="last"> <span><i class="fa fa-facebook-f"></i></span> <span> <i class="fa fa-twitter"></i></span> <span><i class="fa fa-instagram"></i></span></div>
+            </div>
+            <div class="right-side">
+                <div class="card-details">
+                    <div class="input-group">
+                        <div class="input"> <input type="text" required="required"> <span>Prenom</span> </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input"> <input type="text" required="required"> <span>E-mail</span> </div>
+                    </div>
+                </div>
+                <div class="below-content">
+                    <div class="text-area"> <textarea required="required"></textarea> <span>Message</span> </div>
+                    <div class="button"> <button>Envoyer</button> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <section class="team" id="team">
+        <div class="container-fluid text-center">
+            <h2>La <span>team</span></h2>
+            <div class="row">
+                <!-- Box-1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="box">
+                        <div class="image">
+                            <img src="src/imgs/theo.jpg" alt="team" class="img-fluid">
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+                        <h3>Théo</h3>
+                        <h4>Alias R3quiem</h4>
+                    </div>
+                </div>
+                <!-- Box-2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="box">
+                        <div class="image">
+                            <img src="src/imgs/antoine.jpg" alt="team" class="img-fluid">
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+                        <h3>Antoine</h3>
+                        <h4>Alias at20100</h4>
+                    </div>
+                </div>
+                <!-- Box-3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="box">
+                        <div class="image">
+                            <img src="src/imgs/matys.jpg" alt="team" class="img-fluid">
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+                        <h3>Matys</h3>
+                        <h4>Alias Dullweave</h4>
+                    </div>
+                </div>
+                <!-- Box-4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="box">
+                        <div class="image">
+                            <img src="src/imgs/nolan.jpg" alt="team" class="img-fluid">
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+                        <h3>Nolan</h3>
+                        <h4>Alias Nono</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  <script type="text/javascript" src="assets/js/menu.js"></script>
   </body>
 </html>
