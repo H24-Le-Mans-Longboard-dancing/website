@@ -6,13 +6,14 @@
     <meta description="">
     <meta author="rikuaime">
     <link href="assets/css/portfolio.css" rel="stylesheet">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/css/main.css" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/menu.css">
+    <link  type="text/css" href="assets/css/menu.css" rel="stylesheet">
+    <link  type="text/css" href="assets/css/footer.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ae543c5d1c.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="favicon.ico">
     <head>
@@ -24,15 +25,13 @@
     <a href="portfolio.html">Portfolio</a>
     <a href="actus.html">Actus</a>
     <a href="contact.html">Contact</a> 
-    <div class="logo-social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-youtube"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
-</div>
-<div id="main">
-  <div class="menu-burger">&#9776;</div>
+    <div class="logo-social"><a href="https://bit.ly/3nS8dss" target="_blank"><i class="fa fa-facebook"></i></a><a href="https://bit.ly/3nS8dss" target="_blank"><i class="fa fa-youtube"></i></a><a href="https://bit.ly/3nS8dss" target="_blank"><i class="fa fa-instagram"></i></a></div>
 </div>
 
+  <i class="fas fa-bars menu-burger"></i>
     <!-- GALLERY IMG GRID PORTFOLIO-->
 
-    <h1 style="text-align: center;">Masonry Grid Layout</h1>
+    <br><h1 style="text-align: center;">Portfolio</h1><br>
 <section class="grid-container">
   <div class="cols grid-area">
     <figure class="col grid-1">
@@ -64,9 +63,6 @@
       <img src="https://placeimg.com/640/640/nature" alt="">
     </div>
     <div class="col grid-5">
-      <span class="text-container">
-          <p>Focus statement</p>
-        </span>
       <img src="https://placeimg.com/640/640/tech" alt="">
     </div>
     <div class="col grid-6">
@@ -79,8 +75,17 @@
       <img src="https://placeimg.com/640/640/any" alt="">
     </div>
   </div>
-</section>
-    
+</section><br>
+<div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col item social"><a href="https://bit.ly/3nS8dss" target="_blank"><i class="fa fa-facebook" style="margin: 8px 0px 0 0px;"></i></a><a href="https://bit.ly/3nS8dss" target="_blank"><i class="fa fa-youtube" style="margin: 8px 0px 0 0px;"></i></a><a href="https://bit.ly/3nS8dss" target="_blank"><i class="fa fa-instagram" style="margin: 8px 0px 0 0px;"></i></a></div>
+            </div>
+            <p class="copyright">Copyright © 2021 | H24 Le Mans Longboard dancing | Tous droits réservés</p>
+        </div>
+    </footer>
+</div>
  <script>
   $('.menu-burger').on('click', function() {
   $('#main, .sidenav').addClass('active');
