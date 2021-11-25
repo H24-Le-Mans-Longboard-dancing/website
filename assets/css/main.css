@@ -1,1 +1,18 @@
+header {
+  position: relative;
+  height: 600px;
+  background : url('../../src/imgs/bg-accueil.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed; // reflow
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+  .logo-header {
+    position: absolute;
+    display: block;
+    width: auto;
+    height: 50%;
 
+  }
