@@ -1,10 +1,11 @@
 div { box-sizing: border-box; }
+
 body { font-family: "Lato", sans-serif; }
 .sidenav {
   height: 100%;
   width: 250px;
   position: fixed;
-  z-index: 1;
+  z-index: 15;
   top: 0;
   margin-left: -250px;
   background-color: #111;
@@ -15,7 +16,7 @@ body { font-family: "Lato", sans-serif; }
   .sidenav.active {
     margin-left: 0px;
   }
-  a {
+  .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -23,7 +24,7 @@ body { font-family: "Lato", sans-serif; }
     display: block;
     transition: 0.3s;
   }
-    a:hover, .offcanvas a:focus {
+   .sidenav a:hover, .offcanvas a:focus {
       text-decoration: underline #7fd721;
       color: #fff;
     }
@@ -47,6 +48,11 @@ body { font-family: "Lato", sans-serif; }
   .menu-burger {
     cursor: pointer;
     font-size: 40px;
+    position: fixed;
+    z-index: 10;
+    top: 20px;
+    left: 20px;
+    color: #fff;
   }
 
 .logo-menu {
