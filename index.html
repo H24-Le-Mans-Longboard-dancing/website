@@ -14,20 +14,30 @@
     <link rel="shortcut icon" href="favicon.ico">
   </head>
   <body>
-<div oncontextmenu='return false' class='snippet-body'>
-<div class="btn"> <span class="fas fa-bars"></span> </div>
-<nav class="sidebar">
-    <div class="text"> H24 le mans <br> Longboard dancing </div>
-    <ul class="main_side">
-        <li class="active"><a href="#">Accueil</a></li>
-        <li><a href="actus.html">Actus</a></li>
-        <li><a href="portfolio.html">Photo</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+<div id="mySideNav" class="sidenav">
+  <div class="closeButton">&times</div>
+  <img src="src/imgs/logo-blanc.png" class="logo-menu">
+    <a href="#">Accueil</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="actus.html">Actus</a>
+    <a href="contact.html">Contact</a> 
+    <div class="logo-social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-youtube"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+</div>
+<div id="main">
+  <div class="menu-burger">&#9776;</div>
+</div>
+
+ 
   <header>
         </div><img class="logo-header" src="src/imgs/logo-blanc.png" />
     </header>
- <script type="text/javascript" src="assets/js/menu.js"></script>
+ <script>
+  $('.menu-burger').on('click', function() {
+  $('#main, .sidenav').addClass('active');
+})
+$('.closeButton').on('click', function() {
+  $('#main, .sidenav').removeClass('active');
+})
+</script>
   </body>
 </html>
