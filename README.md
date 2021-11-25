@@ -7,11 +7,6 @@ lien contact form :https://bbbootstrap.com/snippets/contact-form-social-icons-an
 lien menu : https://codepen.io/rrschweitzer/pen/ZpOANa
 <br>
 <br>
-
-
-
-
-
 Color :
 <br>Vert : #7fd721
 <br>Gris foncé : #1e1e1e
