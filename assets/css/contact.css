@@ -1,4 +1,4 @@
-/*BOOTSTRAP FORM*/
+/*form*/ 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
@@ -7,15 +7,18 @@
     margin: 0
 }
 
-.contact {
-    min-height: 100vh;
+.contact-form {
+    min-height: 80vh;
+    max-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("https://images7.alphacoders.com/662/662035.png")
+    background-color: #eee;
+    background-image : url(../../src/imgs/bg-contact.jpg);
+    background-size: 70%;
 }
 
-.contact .card {
+.contact-form .card {
     height: 500px;
     width: 800px;
     background-color: #fff;
@@ -28,15 +31,15 @@
     cursor: pointer
 }
 
-.contact .card .form {
+.contact-form .card .form {
     width: 100%;
     height: 100%;
     display: flex
 }
 
-.contact .card .left-side {
+.contact-form .card .left-side {
     width: 45%;
-    background-color: #3e2093;
+    background-color: #1e1e1e;
     height: 100%;
     border-radius: 10px;
     position: relative;
@@ -150,17 +153,17 @@
 
 .last {
     padding: 0 30px;
-    padding-top: 272px;
+    padding-top: 250px;
     position: relative;
     letter-spacing: 10px;
     font-size: 15px;
-    color: #ccc3e2
+    color: #7fd721
 }
 
 .last .fa-facebook-f {
     position: absolute;
     left: -50px;
-    top: 275px;
+    top: 250px;
     transition-delay: 0.6s;
     transition: all 0.5s
 }
@@ -172,7 +175,7 @@
 
 .last .fa-twitter {
     position: absolute;
-    top: 275px;
+    top: 250px;
     left: -50px;
     transition: all 0.5s;
     transition-delay: 0.2s
@@ -186,7 +189,7 @@
 .last .fa-instagram {
     position: absolute;
     left: -50px;
-    top: 275px;
+    top: 250px;
     transition: all 0.5s;
     transition-delay: 0.4s
 }
@@ -199,7 +202,7 @@
 .last .fa-linkedin {
     position: absolute;
     left: -50px;
-    top: 275px;
+    top: 250px;
     transition: all 0.5s;
     transition-delay: 0.6s
 }
@@ -219,7 +222,7 @@
 .left-side::before {
     content: '';
     position: absolute;
-    background-color: #fa949d;
+    background-color: #7fd721;
     height: 270px;
     width: 270px;
     bottom: -120px;
@@ -230,7 +233,7 @@
 .left-side::after {
     content: '';
     position: absolute;
-    background-color: #7e53f9;
+    background-color: #15c530;
     height: 120px;
     width: 120px;
     bottom: 50px;
@@ -239,7 +242,7 @@
     opacity: 0.9
 }
 
-.contact .card .right-side {
+.contact-form .card .right-side {
     width: 55%;
     background-color: #fff;
     height: 100%;
@@ -454,7 +457,7 @@ input[type="radio"]:checked+label:after {
 
 .text-area textarea {
     width: 100%;
-    height: 60px;
+    height: 150px;
     resize: none;
     border: none;
     border-bottom: 2px solid #ccc;
@@ -468,7 +471,7 @@ input[type="radio"]:checked+label:after {
 .button button {
     height: 45px;
     width: 140px;
-    background-color: blue;
+    background-color: #7fd721;
     color: white;
     font-size: 12px;
     position: absolute;
@@ -481,7 +484,7 @@ input[type="radio"]:checked+label:after {
 }
 
 .button:hover button {
-    background-color: darkblue;
+    background-color: #15c530;
     cursor: pointer
 }
 
@@ -490,20 +493,119 @@ input[type="radio"]:checked+label:after {
         width: 100%
     }
 
-    .contact .card {
+    .contact-form .card {
         max-width: 350px
     }
 
-    .contact .card .right-side {
+    .contact-form .card .right-side {
         width: 100%;
         display: none
     }
 
-    .contact .card .left-side {
+    .contact-form .card .left-side {
         width: 100%
     }
 
     .input-group {
         display: block
     }
+}
+
+/*Team*/
+.team {
+    padding: 50px 0;
+}
+
+.team h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0px 0px 20px 0px;
+    padding: 0;
+
+}
+
+.team h2 span {
+    color: #15c530;
+}
+
+.team p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #999999;
+    margin: 20px 0 60px;
+    padding: 0;
+}
+
+.team .box {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all .5s ease-in-out;
+}
+
+.team .box .image {
+    position: relative;
+}
+
+.team .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #7fd721 1%,#56dc1 100%);
+    top: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    z-index: 15;
+}
+
+.team .box .image .social-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #ffffff;
+    z-index: 20;
+    text-decoration: none;
+    opacity: 0;
+    margin-top: 100px;
+    padding: 8px 15px;
+    background: #ffffff;
+    border-radius: 35px;
+    transition: all 0.5s ease-in-out;
+}
+
+.team .box .image .social-icons i {
+    font-size: 18px;
+    padding: 0 7px;
+    color: #7fd721;
+}
+
+.team .box:hover .overlay {
+    opacity: 0.85;
+}
+
+.team .box:hover .social-icons {
+    margin-top: 0;
+    opacity: 1;
+}
+
+.team .box h3 {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.team .box h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    color: #999999;
+    font-weight: 400;
+    margin-top: 5px;
+    padding-bottom: 25px;
+}
+
+.team .box:hover {
+    transform: translateY(-15px);
 }
